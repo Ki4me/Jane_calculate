@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package calculator;
+
+option go_package = "calculator/api";
+
+message CalculateRequest {
+  double a = 1;
+  double b = 2;
+  string operation = 3; // "add", "subtract", "multiply", "divide"
+}
+
+message CalculateResponse {
+  double result = 1;
+  string error = 2;
+}
+
+service CalculatorService {
+  rpc Calculate(CalculateRequest) returns (CalculateResponse) {}
+} 

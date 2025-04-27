@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@connectrpc/connect": "^2.0.2",
+    "@connectrpc/connect-web": "^2.0.2"
+  }
+}
